@@ -28,12 +28,12 @@
 
     <p>
     <input id="night_day" type="button" value="Night"
-    onclick="if(document.querySelector('#night_day').value === 'Night'){
+    onclick="if(this.value === 'Night'){
       document.querySelector('body').style.backgroundColor='black';
       document.querySelector('body').style.color='white';
       document.querySelector('h1').style.borderBottom='white 1px solid';
       document.querySelector('ol').style.borderRight='white 1px solid';
-      document.querySelector('#night_day').value = 'Day';
+      this.value = 'Day';
 
 
       var alist = document.querySelectorAll('a');
@@ -51,7 +51,7 @@
       document.querySelector('body').style.color='black';
       document.querySelector('h1').style.borderBottom='black 1px solid';
       document.querySelector('ol').style.borderRight='black 1px solid';
-      document.querySelector('#night_day').value = 'Night';
+      this.value = 'Night';
 
       var alist = document.querySelectorAll('a');
       var i=0;
